@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tärnings Chatt</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div id="die1" class="dice">0</div>
+    <div id="die2" class="dice">0</div>
+    <button id="rollDice">Roll Dice</button>
+    <h2 id="status" style="clear: left"></h2>
+    <h1>Chat</h1>
+    <div id="userContainer"></div>
+    <div id="user">
+      <form id="formUser">
+        <input type="text" id="inputUser" /><button>Skriv in ditt namn</button>
+      </form>
+    </div>
+    <div id="message">
+      <form id="formMessage">
+        <input type="text" id="inputMessage" /><button>
+          Skicka ett meddelande
+        </button>
+      </form>
+    </div>
+    <h2>Chat meddelanden</h2>
+    <ul id="messages"></ul>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>
